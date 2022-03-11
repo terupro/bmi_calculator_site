@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI測定サイト</title>
+
+
+
+    <script>
+        function keisan(){
+            var a, b,d;
+            a = document.getElementById("shincho").value;
+            b	= document.getElementById("taijuu").value;
+            c = b/( (a/100)*(a/100) );
+        if(c >= 25){
+                document.getElementById("kuuran").textContent = "肥満型";
+            }
+        else if(c < 25 && c >= 18){
+                document.getElementById("kuuran").textContent = "標準型";
+            }
+            else{
+                document.getElementById("kuuran").textContent = "瘦せ型";
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <header>
+
+   <main>
+       <div class="main-page">
+           <div class="main-item">
+               <div class="item"> <h1>Stay Healthy</h1></div>
+               <div class="item">  <h2><span>BMI</span>を測定して、自分の肥満度を確認しよう</h2></div>  
+               <div class="item">  <a href="#"><span></span>Scroll</a></div>
+           </div>
+       </div>
+   </main>
+</header>
+
+<div class="first">
+    <div class="first1">
+        <div class="first1-1">
+            <h1>[測定方法]</h1>
+            <h2>①身長を入力→②体重を入力→③「計算する」をクリック </h2>
+            <h3>※BMIの値が18未満ならば「痩せ型」，18以上25
+                未満ならば「標準型」，25以上ならば「肥満型」と表⽰されます。</h3>
+        </div>
+        <div class="first1-2">
+           <div class="item">身長 <input type="number" id="shincho"> cm</div>  
+            <div class="item">体重 <input type="number" id="taijuu"> kg</div>
+           <div class="item"> <button type="button" onclick="keisan()"> 計算する </button> </div>
+            <div class="item">あなたのBMIは <span id="kuuran"> ○○</span> です</div>
+          </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+

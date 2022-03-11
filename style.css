@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+    color:#fff;
+   
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(patrick-hendry-w5SgojGZooI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    width: 100%;
+    height: 80vh;
+}
+.main-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.main-item h1{
+    color: white;
+    font-size: 200px;
+    padding-top: 70px;
+    font-style: italic;
+}
+.main-item h2 {
+  color: white;
+  font-size: 46px;
+  padding-top: 67px;
+}
+.main-item h2 span{
+    font-size: 100px;
+    font-style: italic;
+    padding: 0px 10px;
+   
+}
+
+a {
+    position: absolute;
+    bottom: 200px;
+    left: 47%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-decoration: none;
+    color: white;
+  }
+  a {
+    padding-top: 60px;
+  }
+  a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+  }
+  a span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
+  a span::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 45px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rgba(255,255,255,.9);
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-animation: sdb 3s infinite;
+    animation: sdb 3s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      box-shadow: 0 0 0 60px rgba(255,255,255,.9);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      box-shadow: 0 0 0 60px rgba(255,255,255,.9);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .first{
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(52, 52, 52);
+  }
+ .first{
+     width: 100%;
+     height: 100vh;
+ }
+ .first1{
+   background-color: #444040;
+   height: 900px;
+ }
+  .first1-1{
+     display: block;
+     padding-top: 30px;
+     padding-left: 50px;
+    line-height: 1.7;
+    margin-bottom: 100px;
+  }
+  .first1-1 h1{
+      font-size: 50px;
+  }
+  .first1-1 h2{
+  font-size: 30px;
+
+
+  }
+  .first1-1 h3{
+font-size: 30px;
+}
+
+.first1-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    line-height: 1.9;
+    border: 10px solid white;
+    width: 1000px;
+    
+    margin: 100px auto;
+}
+.first1-2 .item{
+  font-size: 50px;
+  margin: 10px;
+ 
+}
+.first1-2 .item input{
+   width: 200px;
+    font-size: 100%;
+}
+.first1-2 .item button{
+    font-size: 3rem;
+  
+
+}

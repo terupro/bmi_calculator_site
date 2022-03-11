@@ -1,5 +1,5 @@
 # bmi_calculator_site
-BMI計算サイト
+HTML,CSS,JavaScriptを用いたBMI計算サイト
 
 ## 画像
 
